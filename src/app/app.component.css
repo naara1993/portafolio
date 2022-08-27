@@ -1,0 +1,5 @@
+.cursor{
+    position:absolute;
+    transition-duration: 100ms;
+    cursor: pointer;
+}

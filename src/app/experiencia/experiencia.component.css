@@ -1,0 +1,201 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/* -------- variables predefinidas 
+:root {
+    --body-bg-color: #1a1c1d;
+    --text-color: #aaaebc;
+    --hr-color: #26292a;
+    --red: #e74c3c;
+  }
+  */
+
+  /* ------------ cuando visita */
+  ul li  .a:active::before{
+    content:"♥♥♥♥♥♥♥";
+
+    }
+    /* nav */
+nav{
+  background-color:#030000de;
+    padding:30px;
+    font-size:1.5rem;
+}
+nav a{
+    position:relative;
+}
+ul li  a{
+    text-decoration:uppercase;
+     color:#fff;
+}  
+#navbar-nav{
+    display:inline-flex;
+    padding-left: 30%;
+    justify-content: center; 
+ }
+
+/* animacion linea */
+
+   .a::before {
+    position:absolute;
+    background: linear-gradient(to right, #6356c5, #78a9e8, #85d5eb);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:5px;
+    content: '';
+    z-index: 1;
+    margin-top:5px;
+  }
+  
+     .a:hover::before {
+    transform: scaleX(1);
+  }
+
+     .a[data-animation="to-left"] .a::before {
+        transform-origin: right;
+      }
+      
+    .a[data-animation="center"] .a::before {
+        transform-origin: center;
+      }
+      
+      .a[data-animation="bonus"] .a::before {
+        transform-origin: right;
+      }
+      
+    .a[data-animation="bonus"] .a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+      }
+ /* section fondo sobre mi */
+
+#sobreMI,section{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:  url("../../assets/fondo.jpg"); 
+}
+ #contenedor-datosPersonales{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ }
+
+#parrafo1,#parrafo2{
+    font-size: 1.7rem;
+    color:#ffffffef;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding-left: 20%;
+}
+#img{
+  border-radius: 40px;
+  width: 200px;
+  height: 230px;
+}
+#icono1,#icono2,#icono3,#icono4{
+  color:#ffffff;
+  font-size: 2.5rem;
+}
+.text-gradient {    
+  color: transparent;
+  background-image: linear-gradient(to left, #f8f7ef, #cbc5e8, #bbdcf2, #cafbde, #0d0d0c);    
+  background-clip: text;
+  animation: color 3s linear infinite;
+  font-size: 4rem;
+  background-size: 700%;    
+}
+
+ a::before { 
+  box-shadow: 2px 8px 8px 2px rgba(199, 196, 196, 1.2);
+}
+a::after{
+/* content:"<3"  c+k+c*/
+}
+
+@keyframes color {
+  from {
+      background-position: 0% 50%;
+  }
+
+  to {
+      background-position: 100% 50%;
+  }
+}
+.contacto{
+  border-top:4px solid white;
+}
+.boton-cv{
+  background-color:white;
+  color:black;
+  font-weight:bold;
+  font-size:2em;
+  font-style: normal;
+  width:160px;
+  
+
+}
+.caja-boton-subir{
+  background-color:#030000de;
+  display:flex;
+  justify-content:end;
+  padding-right: 5%;
+
+}
+.caja-boton-subir a{
+  text-decoration: none;
+ background-color:transparent;
+ border:0px;
+}
+
+
+.caja-boton-subir a .i{
+color:white;
+font-size:3em;
+border:0.5 solid white;
+padding:1px;
+
+ }
+/***educacion experiencia*****/
+.separador{
+  width:100%;
+  height:50px;
+  background-color:#030000de;
+}
+.card{
+  background-color:transparent !important;
+  border:1px solid white;
+}
+.contenedor{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+#educacion,#experiencia{
+  color:white;
+}
+article{
+  margin:10px;
+}
+
+
+/******footer******/
+footer{
+  background-color:#030000de;
+}
+footer a{
+  text-decoration: none;
+}
+
+/********************reponsive***************/

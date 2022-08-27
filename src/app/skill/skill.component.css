@@ -1,0 +1,214 @@
+
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+/*header*/
+ul li  .a:active::before{
+    content:"♥♥♥♥♥♥♥";
+
+    }
+    /* nav */
+nav{
+  background-color:#030000de;
+    padding:30px;
+    font-size:1.5rem;
+}
+nav a{
+    position:relative;
+}
+ul li  a{
+    text-decoration:uppercase;
+     color:#fff;
+}  
+#navbar-nav{
+    display:inline-flex;
+    padding-left: 30%;
+    justify-content: center; 
+ }
+
+/* animacion linea */
+
+   .a::before {
+    position:absolute;
+    background: linear-gradient(to right, #6356c5, #78a9e8, #85d5eb);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:5px;
+    content: '';
+    z-index: 1;
+    margin-top:5px;
+  }
+  
+     .a:hover::before {
+    transform: scaleX(1);
+  }
+
+     .a[data-animation="to-left"] .a::before {
+        transform-origin: right;
+      }
+      
+    .a[data-animation="center"] .a::before {
+        transform-origin: center;
+      }
+      
+      .a[data-animation="bonus"] .a::before {
+        transform-origin: right;
+      }
+      
+    .a[data-animation="bonus"] .a:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+        transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+      }
+ /* section fondo sobre mi */
+
+ #contenedor-datosPersonales{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ }
+
+#parrafo1,#parrafo2{
+    font-size: 1.7rem;
+    color:#ffffffef;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding-left: 20%;
+}
+#img{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+
+#section{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:  url("../../assets/fondo.jpg");
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/******contenedor-skill***/
+
+.contenedor-skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  width: 100%;
+  height:100%;
+}
+
+.icon{
+  width:220px;
+  padding:20px;
+  justify-content: center;
+}
+article{
+    box-shadow: 0px 0px 10px 0px rgba(255, 252, 252, 0.4);
+    margin:15px;
+}
+article:hover{
+cursor:pointer;
+}
+
+
+article:hover{
+  box-shadow: 0px 0px 30px 0px rgba(255, 252, 252, 0.4);
+}
+
+h1 {
+    cursor: default;
+    position: relative;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height:auto;
+    margin: auto;
+    display: block;
+    
+    animation: .3s ease infinite alternate  bounce;
+    
+    font-family: 'Erica One', cursive;
+    font-size: 80px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .6);
+  }
+  /* ANIMATION */
+  @keyframes bounce {
+    100% {
+      top: -30px;
+      
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 30px 30px rgba(0, 0, 0, .3);
+    }
+  }
+
+.caja-boton-subir{
+  background-color:#030000de;
+  display:flex;
+  justify-content:end;
+  padding-right: 5%;
+
+}
+.caja-boton-subir a{
+  text-decoration: none;
+ background-color:transparent;
+ border:0px;
+}
+
+
+.caja-boton-subir a .i{
+color:white;
+font-size:3em;
+border:0.5 solid white;
+padding:1px;
+
+ }
+  
+/******footer******/
+footer{
+    background-color:#030000de;
+}
+footer a{
+    text-decoration: none;
+}

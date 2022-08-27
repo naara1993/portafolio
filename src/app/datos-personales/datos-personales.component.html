@@ -1,0 +1,117 @@
+
+<header class="">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img
+        class="img-fluid"
+        src="./assets/l.png"
+        id="logo"
+        alt="imagen de lotus"
+      />
+      <button
+        class="navbar-toggler mt-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="navbar-nav"
+        >
+          <li class="nav-item"
+          >
+              <a
+              class="a nav-link active"
+              aria-current="page"
+              routerLinkActive="active"
+              >Sobre mí     
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/educacion" >Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/experiencia" >Experiencia</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/proyectos" >Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link" routerLink="/skill" href="#">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"   routerLink="/contacto" href="#">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- [ngStyle]="{'background': 'url(./assets/fondo.jpg) no-repeat'}""-->
+<section id="sobreMI">
+  <div class="container-fluid" *ngFor="let datosPersona of datosPersona">
+    <div class="row">
+      <div class="mt-5 p-5" id="contenedor-datosPersonales">
+        <h2 class="h1 text-center" class="text-gradient" id="nombre">
+          {{ datosPersona.nombre }}
+        </h2>
+        <p class="mt-2 p-3" id="parrafo1">
+          {{ datosPersona.descripcion1 }}
+        </p>
+        <p id="parrafo2" class="mt-1">
+          {{ datosPersona.descripcion2 }}
+        </p>
+        <img class="mt-5" id="img" src="./assets/naara.jpg" alt="" />
+          <a class="text-unstyled" href="./assets/naara-belen-cataldo-cv.pdf" download="./assets/naara-belen-cataldo-cv.pdf">
+            <button type="button" class="btn h2 mt-4 boton-cv">Descargar cv    </button>
+          </a>
+
+        <div class="mt-5 contacto">
+          <ul class="list-unstyled d-flex p-3">
+            <li>
+              <a href="https://www.linkedin.com/in/naaracataldo/" target="_blank">
+                <i class="fa-brands fa-linkedin p-3" id="icono1"> </i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:naarabelencataldo@outlook.com"> 
+                <i class="fa-solid fa-envelope p-3" id="icono2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:1144164278">
+              <i class="fa-solid fa-mobile p-3" id="icono3"></i>
+            </a>
+            </li>
+            <li>
+              <a href="https://github.com/naara1993" target="_blank">
+                <i class="fa-brands fa-github p-3" id="icono4"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="caja-boton-subir">
+  <a href="#" routerLinkActive="active">
+  <i class="fa-solid fa-caret-up i">
+  </i>
+</a>
+</div>
+<footer> 
+  <!-- Copyright -->
+  <div class="text-center p-3" id="copyright">
+      <a class=" text-light text-uppercase ">   < naara >  < / naara >   </a>
+   </div>
+   <!-- Copyright --> 
+</footer>

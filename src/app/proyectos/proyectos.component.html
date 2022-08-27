@@ -1,0 +1,224 @@
+<header id="header" class="fixed-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img
+        class="img-fluid"
+        src="./assets/l.png"
+        id="logo"
+        alt="imagen de lotus"
+      />
+      <button
+        class="navbar-toggler mt-1"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="a nav-link active"
+              aria-current="page"
+              routerLink="/"
+              >Sobre mí</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/educacion" >Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/experiencia" >Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"
+            routerLinkActive="active"
+            routerLink="/proyectos" >Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"    routerLink="/skill" >Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="a nav-link"
+            routerLink="/contacto">
+            Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div id="imagen-fondo">
+
+<!--
+<section id="seccion-forma">
+    <div class="">
+        <svg class="features__geometry-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,112C672,128,768,224,864,240C960,256,1056,192,1152,154.7C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+      </div>
+</section>
+-->
+<section id="seccion">
+      <h2 class="h2 text-center title">Proyectos Realizados</h2>
+  <div class=" container-fluid container-proyectos mt-5">
+    <div  class="row ">
+        <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/WhatsApp Image 2022-08-02 at 8.54.52 AM.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">blog</h5>
+                  <p class="card-text">
+                    Blog realizado en la cursada de codellege, basicamente hace
+                    referencia a las distintas tecnologias que se usan hoy en dia para
+                    la creación de una pagina web. Fue realizado con
+                    html,css,bootstrap,javascript.
+                  </p>
+                </div>
+                <div class="footer">
+                  <a href="https://naara1993.github.io/blog.io/index.html" target="_blank">
+                    <button id="button" type="button btn">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>    <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/ecommerce.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">Ecommerce</h5>
+                  <p class="card-text">
+                    Ecommerce realizado  en grupo en la cursada de codellege,
+                    Se implemento una pagina principal y tres categorias de articulos
+                    Se uso html,css,bootstap y javascript.
+                  </p>
+                </div>
+                <div class="footer">
+                    <a href="https://fascinating-bonbon-047c1b.netlify.app/" target="_blank" >
+
+                    <button id="button" type="button btn">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>   
+           <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/portafolio.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">Portafolio</h5>
+                  <p class="card-text">
+                   Protafolio realizado en la cursada de argentina programa, en el cual 
+                   se implementa un login/registro para acceder al portafolio y ver el contenido. 
+                   Se uso html,css,bootstrap,angular,typescript,jwt,spring boot,clever.
+                  </p>
+                </div>
+                <div class="footer">
+                  <a href="https://hostingangularargentina.web.app/portafolio"  target="_blank">
+                    <button id="button" type="button btn">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+    </div>
+    <div  class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/devBuguer.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">Hamburguesas</h5>
+                  <p class="card-text">
+                 Proyecto realizado en forma grupal en la cursada de codellege. 
+                 Se uso html,css,bootstrap,javascript.
+                  </p>
+                </div>
+                <div class="footer">
+                  <a href="https://devbugguer.netlify.app/" target="_blank">
+                    <button id="button" type="button btn">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>    <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/grid.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">diseño con display grid</h5>
+                  <p class="card-text">
+                    Realizado con 
+                    html,css.
+                  </p>
+                </div>
+                <div class="footer">
+                  <a href="https://relaxed-hummingbird-95e3c6.netlify.app/" target="_blank">
+                    <button id="button" type="button">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>  
+          <div class="col-sm-12 col-md-4 col-lg-4 contenedor">
+            <article>
+              <div class="card mt-3">
+                <img
+                  class="card-img-top img-fluid card-imagen"
+                  src="./assets/restaurante.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title h2">Restaurante</h5>
+                  <p class="card-text">
+                  En desarrollo, esta echo con html,css,bootstrap,javascript.
+                  </p>
+                </div>
+                <div class="footer">
+                  <a href="https://fastidious-beijinho-a833a7.netlify.app/" target="_blank">
+                    <button id="button" type="button btn">ver pagina</button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div> 
+    </div>
+    </div>
+</section>
+</div>
+<footer> 
+        <!-- Copyright -->
+        <div class="text-center p-3" id="copyright">
+            <a class=" text-light text-uppercase ">   © 2022 Copyright  </a>
+         </div>
+         <!-- Copyright --> 
+</footer>
