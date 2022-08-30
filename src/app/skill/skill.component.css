@@ -8,11 +8,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
-/*header*/
-ul li  .a:active::before{
-    content:"♥♥♥♥♥♥♥";
 
-    }
     /* nav */
 nav{
   background-color:#030000de;
@@ -98,12 +94,12 @@ flex-direction: column;
 #section{
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image:  url("../../assets/fondo.jpg");
-  height:100vh;
   display:flex;
   justify-content: center;
   align-items: center;
+  height:100vh;
 }
 
 
@@ -211,4 +207,32 @@ footer{
 }
 footer a{
     text-decoration: none;
+}
+
+
+
+
+/****resposnive***/
+@media screen and (max-width:1000px){
+  #logo{
+    width:40%;
+    height:40%;
+  }
+  #boton{
+    background-color:white !important;
+  }
+  #navbar-nav{
+    font-size: 1em!important;
+  }
+  .h1{
+    width:auto;
+   font-size: 2em;
+  }
+article{
+  height:200px;
+  width:100%;
+}
+.contenedor-skill{
+  height:100vh;
+}
 }

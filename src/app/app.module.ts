@@ -13,12 +13,7 @@ import { SkillComponent } from './skill/skill.component';
 import { FormsModule } from '@angular/forms';
 import { skillsServicios } from './skill/skills-service/SkillsService';
 import { EducacionComponent } from './educacion/educacion.component';
-import { ExperienciaComponent } from './experiencia/experiencia.component';
-
-
-
-
-
+import { educacionService } from './educacion/educacionService/eduacionService';
 
 @NgModule({
   declarations: [
@@ -28,8 +23,6 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
     ContactoComponent,
     SkillComponent,
     EducacionComponent,
-    ExperienciaComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -38,7 +31,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [datosPersonalesServicios,skillsServicios],
+  providers: [datosPersonalesServicios,skillsServicios,educacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

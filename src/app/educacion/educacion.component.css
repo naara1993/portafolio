@@ -12,11 +12,7 @@
   }
   */
 
-  /* ------------ cuando visita */
-  ul li  .a:active::before{
-    content:"♥♥♥♥♥♥♥";
 
-    }
     /* nav */
 nav{
   background-color:#030000de;
@@ -180,13 +176,34 @@ padding:1px;
   display: flex;
   justify-content:center;
   align-items:center;
+  flex-wrap: wrap;
   padding:20px;
 }
 #educacion,#experiencia{
   color:white;
 }
+#educacion{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
 article{
   margin:10px;
+  border:1.5 solid white;
+  height:400px;
+  width:300px;
+
+}
+.card img{
+  height:100px;
+}
+.card-title{
+  font-size:medium;
+  text-decoration:underline;
+}
+.card-body{
+  height:200px;
 }
 
 
@@ -199,3 +216,18 @@ footer a{
 }
 
 /********************reponsive***************/
+
+
+@media screen and (max-width:1000px){
+  #logo{
+    width:auto;
+    height:auto;
+  }
+  #boton{
+    background-color:white !important;
+  }
+  #navbar-nav{
+    font-size: 1em;
+   width:100%;
+  }
+  }

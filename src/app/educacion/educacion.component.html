@@ -1,4 +1,12 @@
-<header class="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <img
@@ -16,7 +24,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" id="boton"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav" id="navbar-nav"
@@ -36,9 +44,6 @@
                 aria-current="page"
                 routerLinkActive="active"
                 routerLink="/educacion" >Educación</a>
-              </li>
-              <li class="nav-item">
-                <a class="a nav-link"    routerLink="/experiencia" >Experiencia</a>
               </li>
             <li class="nav-item">
               <a class="a nav-link"    routerLink="/proyectos" >Proyectos</a>
@@ -63,60 +68,61 @@
         </div>
         <div class="container-educacion">
           <div class="contenedor mt-3">
-            <article>
-              <div class="card" style="width: 18rem;">
-                <img src="assets/devBuguer.jpeg" class="card-img-top" alt="...">
-                <div class="card-body text-light text-center p-4">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-dark mt-3">
-                    <a href="#" class="btn btn-dark">Más</a>
-                  </button>
+            <article  *ngFor="let educacion of edu">
+              <div class="card" >
+                <img src="{{educacion.imagen}}" title="titulo terciario análisis de sistemas informáticos" class="card-img-top" alt="...">
+                <div class="card-body text-light text-center mt-3 p-4">
+                  <h5 class="card-title">{{educacion.nombreInstitucion}} </h5>
+                  <p class="card-text"> {{educacion.tituloCarrera}}
+                  </p>
+                  <span>
+                    <p  id="fechaUno">{{educacion.fechaInicio}}</p><p id="fechaDos">{{educacion.fechaFinal}}</p>
+                  </span>
+                </div>
+              </div>
+            </article>
+             <!-- <article>
+              <div class="card">
+                <img src="assets/argentinaPrograma.png" title="certificado programadora JR " class="card-img-top" alt="...">
+                <div class="card-body text-light text-center mt-3 p-4">
+                  <h5 class="card-title">Argentina programa</h5>
+                  <p class="card-text">{{educacion.tituloCarrera}}</p>
+                  <span>
+                    <p>09/2021</p><p>05/2022</p>
+                  </span>
                 </div>
               </div>
             </article>
             <article>
-              <div class="card" style="width: 18rem;">
-                <img src="assets/devBuguer.jpeg" class="card-img-top" alt="...">
-                <div class="card-body text-light text-center p-4">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-dark mt-3">
-                    <a href="#" class="btn btn-dark">Más</a>
-                  </button>
+              <div class="card" >
+                <img src="assets/codellege.png" title="Programacion JR" class="card-img-top" alt="...">
+                <div class="card-body text-light mt-3 text-center p-4">
+                  <h5 class="card-title">Codellege By sofftek</h5>
+                  <p class="card-text">DESARROLLO WEB </p>
+                  <span>
+                    <p>05/2022</p><p>09/2022</p>
+                  </span>
                 </div>
               </div>
             </article>
             <article>
-              <div class="card" style="width: 18rem;">
-                <img src="assets/devBuguer.jpeg" class="card-img-top" alt="...">
-                <div class="card-body text-light text-center p-4">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-dark mt-3">
-                    <a href="#" class="btn btn-dark">Más</a>
-                  </button>
+              <div class="card" >
+                <img src="assets/ada.png" title="programacion web JR" class="card-img-top" alt="...">
+                <div class="card-body text-light text-center mt-3 p-4">
+                  <h5 class="card-title">Ada itw</h5>
+                  <p class="card-text">DESARROLLO WEB BACKEND</p>
+                  <span>
+                    <p>09/2021</p><p>30/05/2023</p>
+                  </span>
                 </div>
               </div>
-            </article>
-            <article>
-              <div class="card" style="width: 18rem;">
-                <img src="assets/devBuguer.jpeg" class="card-img-top" alt="...">
-                <div class="card-body text-light text-center p-4">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button type="button" class="btn btn-dark mt-3">
-                    <a href="#" class="btn btn-dark">Más</a>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
+            </article>  -->
+          </div> 
         </div>
       </div>
     </div>
   </section>
-  <div class="caja-boton-subir">
+  <div class="caja-boton-subir ">
     <a href="#" routerLinkActive="active">
     <i class="fa-solid fa-caret-up i">
     </i>
@@ -129,3 +135,5 @@
      </div>
      <!-- Copyright --> 
   </footer>
+</body>
+</html>

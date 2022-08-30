@@ -12,11 +12,6 @@
   }
   */
 
-  /* ------------ cuando visita */
-  ul li  .a:active::before{
-    content:"♥♥♥♥♥♥♥";
-
-    }
     /* nav */
 nav{
   background-color:#030000de;
@@ -200,5 +195,46 @@ footer a{
 
 /********************reponsive***************/
 
+
+
+@media screen and (max-width:1100px){
+  #navbar-nav{
+    font-size: 1em;
+   width:100%;
+  }
+#logo{
+  width:auto;
+  height:auto;
+}
+#boton{
+  background-color:white !important;
+}
+#parrafo1,#parrafo2{
+  width:auto !important;
+  text-align:center !important;
+}
+#parrafo2{
+  margin-right: 15%;
+}
+}
+@media screen and (max-width:700px){
+  #logo{
+    width:auto;
+    height:auto;
+  }
+  #boton{
+    background-color:white !important;
+  }
+  #parrafo1,#parrafo2{
+    width:auto !important;
+    font-size: 1em;
+  }
+  #nombre{
+    font-size: 2em;
+  }
+  #parrafo2{
+    margin-right: 15%;
+  }
+  }
 
 
