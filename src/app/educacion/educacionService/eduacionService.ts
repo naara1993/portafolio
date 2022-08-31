@@ -12,7 +12,7 @@ import { educacion } from '../educacionModels/educacion';
   export class educacionService { 
 
 
-    DatosPersonaURL = 'http://localhost:8080/educacion/';
+    DatosPersonaURL = ' https://nany-1234.herokuapp.com/educacion/';
 
     constructor(private httpClient: HttpClient) { }
 

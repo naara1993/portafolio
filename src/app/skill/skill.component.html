@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <header id="ancla">
+  <header>
     <nav class=" navbar navbar-expand-lg">
       <div class="container-fluid">
         <img
@@ -55,14 +55,14 @@
     <div class="container-fluid">
       <div class="row">
         <h1 class="h1 text-center">Skill Técnicas</h1>
-        <div class="contenedor-skill mt-3">
-          <div *ngFor="let skil of skill">
-            <article >
-              <div>
+        <div class="contenedor-skill mt-3 col-sm-12 ">
+           <div *ngFor="let skil of skill"> 
+            <div>
+            <article width="40px" height="40px" class="col-sm-12 col-md-6 col-lg-6" >
                   <img  class="icon" src="{{ skil.imagen }}" alt="" />
-              </div>
-            </article>
-          </div>
+            </article>    
+          </div>       
+           </div> 
         </div>
       </div>
     </div>

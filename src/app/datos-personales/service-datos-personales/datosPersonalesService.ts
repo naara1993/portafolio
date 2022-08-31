@@ -12,7 +12,7 @@ import { datosPersonales } from '../models-datos-personales/datosPersonales';
   export class datosPersonalesServicios{ 
 
 
-    DatosPersonaURL = 'http://localhost:8080/persona/';
+    DatosPersonaURL = ' https://nany-1234.herokuapp.com/persona/';
 
     constructor(private httpClient: HttpClient) { }
 

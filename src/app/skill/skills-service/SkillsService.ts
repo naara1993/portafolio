@@ -10,7 +10,7 @@ import { Skills } from '../skills-models/skills';
   export class skillsServicios{ 
 
 
-    DatosPersonaURL = 'http://localhost:8080/skills/';
+    DatosPersonaURL = ' https://nany-1234.herokuapp.com/skills/';
 
     constructor(private httpClient: HttpClient) { }
 
